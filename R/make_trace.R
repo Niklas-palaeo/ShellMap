@@ -7,6 +7,7 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
   require(ggmap)
   require(rgeos)
   require(sp)
+  require(sf)
   
   
   
