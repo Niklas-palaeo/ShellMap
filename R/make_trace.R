@@ -8,6 +8,7 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
   require(rgeos)
   require(sp)
   require(sf)
+  require(patchwork)
   
   
   
@@ -214,7 +215,7 @@ p_trace <-
 p <-   p_map+plot_spacer()+p_trace+plot_layout(widths=c(NA,0.1,NA))
 
 
-rm(temp1,temp2,distances, markers)
+rm(temp1,temp2,distances, Markers)
 # rgl.close()
 
   return(p)
