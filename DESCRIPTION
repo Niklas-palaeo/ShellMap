@@ -1,11 +1,14 @@
 Package: ShellMap
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Makes Map And Line Scan Of Data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Niklas hausmann
+Maintainer: Niklas Hausmann <niklas@palaeo.eu>
+Description: This is used to quickly make a transect of 2D point data carrying data.
+    This data needs to be formatted as data.frame or tibble with 3 columns: x, y, data (usually Mg/Ca).
+    It consists of two functions: make_crop() nd make_trace(). 
+    The first one helps to focus on a specific area of the map, but it is not necessary.
+    The second plots the data and then lets you choose the position of the transect.
+License: Creative Commons Zero
 Encoding: UTF-8
 LazyData: true
