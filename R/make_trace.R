@@ -1,5 +1,14 @@
 make_trace<- function(map,buffer,point_num,limit, resolution) {
 
+  
+  require(tidyverse)
+  require(Cairo)
+  require(rgl)
+  require(ggmap)
+  require(sp)
+  
+  
+  
   if(missing(limit)) {
     limit <- 1
   } else {
@@ -39,9 +48,6 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
   # point_num <- 2
   # map <- C7_M
 
-  require(tidyverse)
-  require(Cairo)
-  require(rgl)
 
   options(bitmapType="cairo")
   

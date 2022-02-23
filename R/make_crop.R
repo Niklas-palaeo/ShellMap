@@ -1,5 +1,12 @@
 make_crop<- function(map,limit) {
   
+  require(tidyverse)
+  require(Cairo)
+  require(rgl)
+  require(ggmap)
+  require(sp)
+  
+  
   if(missing(limit)) {
     limit <- 1
   } else {
@@ -10,9 +17,7 @@ make_crop<- function(map,limit) {
   map <- map %>%
     filter(mg_ca<limit)  
 
-  require(tidyverse)
-  require(Cairo)
-  require(rgl)
+ 
   
   options(bitmapType="cairo")
   
