@@ -5,6 +5,7 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
   require(Cairo)
   require(rgl)
   require(ggmap)
+  require(rgeos)
   require(sp)
   
   
