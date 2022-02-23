@@ -6,6 +6,17 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
     limit <- limit
   }
   
+  if(missing(point_num)) {
+    point_num <- 2
+  } else {
+    point_num <- point_num
+  }
+  
+  if(missing(buffer)) {
+    buffer <- 0.2
+  } else {
+    buffer <- buffer
+  }
   
   if(missing(resolution)) {
     resolution <- 100
