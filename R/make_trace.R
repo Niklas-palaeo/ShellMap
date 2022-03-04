@@ -14,7 +14,7 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
   
   
   if(missing(limit)) {
-    limit <- 1
+    limit <- 1.5
   } else {
     limit <- limit
   }
