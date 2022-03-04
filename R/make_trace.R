@@ -8,6 +8,7 @@ make_trace<- function(map,buffer,point_num,limit, resolution) {
   require(rgeos)
   require(sp)
   require(sf)
+  require(SDraw)
   require(patchwork)
   
   
